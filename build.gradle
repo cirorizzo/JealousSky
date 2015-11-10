@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+//apply plugin: 'nu.studer.plugindev'
 
 android {
     compileSdkVersion 23
@@ -7,8 +10,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName "0.4"
     }
     buildTypes {
         release {
@@ -23,3 +26,100 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.0'
 }
+
+def siteUrl = 'https://github.com/cirorizzo/JealousSky'      // Homepage URL of the library
+def gitUrl = 'https://github.com/cirorizzo/JealousSky.git'   // Git repository URL
+def groupID = 'com.github.cirorizzo'
+def artifactID = 'jealous-sky'
+
+group = 'com.github.cirorizzo'
+version = "0.1"
+
+
+//install {
+//    repositories.mavenInstaller {
+//        // This generates POM.xml with proper parameters
+//        pom {
+//            project {
+//                packaging 'aar'
+//
+//                // Add your description here
+//                name 'com.github.cirorizzo:jealoussky'
+//                description = 'Encryption/Decryption Library for Android'
+//                url siteUrl
+//
+//                // Set your license
+//                licenses {
+//                    license {
+//                        name 'GNU GENERAL PUBLIC LICENSE, Version 2.0'
+//                        url 'http://www.gnu.org/licenses/gpl-3.0.txt'
+//                    }
+//                }
+//                developers {
+//                    developer {
+//                        id 'cirorizzo'
+//                        name 'Ciro Rizzo'
+//                        email 'ciro.rizzo@gmail.com'
+//                    }
+//                }
+//                scm {
+//                    connection gitUrl
+//                    developerConnection gitUrl
+//                    url siteUrl
+//                }
+//            }
+//        }
+//    }
+//}
+
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+bintray {
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+
+    configurations = ['archives']
+    pkg {
+        repo = 'maven'
+        name = artifactID
+        desc = 'Encryption/Decryption Library for Android'
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
+        issueTrackerUrl = 'https://github.com/cirorizzo/JealousSky/issues'
+        licenses = ["GPL-3.0"]
+        publish = true
+        version {
+            gpg {
+                sign = true //Determines whether to GPG sign the files. The default is false
+                passphrase = properties.getProperty("bintray.gpg.password")
+            }
+            publicDownloadNumbers = true
+        }
+    }
+}
+
+
+
+

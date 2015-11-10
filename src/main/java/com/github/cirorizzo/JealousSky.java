@@ -1,4 +1,4 @@
-package cirorizzo.co.uk.jealoussky;
+package com.github.cirorizzo;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
