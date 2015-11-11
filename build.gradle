@@ -129,6 +129,11 @@ install {
     }
 }
 
+task copyAAR(type: Copy) {
+    from('build/outputs/aar/' + project.name + '-release.aar')
+    into('release')
+    include(project.name + '-release.aar')
+}
 
 
 
