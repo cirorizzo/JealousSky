@@ -91,7 +91,7 @@ Before submitting pull requests, contributors must sign Google's [individual con
 
 Author
 ------
-Ciro Rizzo - @jackrix
+Ciro Rizzo - @JackRix
 
 
 
