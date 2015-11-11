@@ -77,7 +77,7 @@ GNU General Public License 3.0. See the [LICENSE][3] file for details.
 
 Status
 ------
-[*Version 0.2*] is a stable public pre-releaseapp.
+[*Version 0.2*] is a stable public pre-release library.
 Comments/bugs/questions/pull requests welcome!
 
 Getting Help
