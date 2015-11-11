@@ -1,7 +1,7 @@
 # JealousSky
 
 ##Encryption/Decryption Library for Android
---------
+
 
 JealousSky is an efficient library to encrypt and decrypt data for Android.
 
