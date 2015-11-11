@@ -85,10 +85,6 @@ Getting Help
 To report a specific problem or feature request, [open a new issue on Github][4]. For questions, suggestions, or
 anything else, join or email [JealousSky's discussion group][6]
 
-Contributing
-------------
-Before submitting pull requests, contributors must sign Google's [individual contributor license agreement][5].
-
 Author
 ------
 Ciro Rizzo - @JackRix
