@@ -1,5 +1,12 @@
 # JealousSky
 
+[![Platform](http://img.shields.io/badge/platform-android-blue.svg?style=flat)]
+[![MinSDK](http://img.shields.io/badge/minsdk-16-blue.svg?style=flat)]
+[![Language](http://img.shields.io/badge/language-java-brightgreen.svg?style=flat)]
+[![License](http://img.shields.io/badge/license-GPLv3.0-lightgrey.svg?style=flat)]
+[![Bintray](https://img.shields.io/bintray/v/asciidoctor/maven/asciidoctorj.svg)]
+[![Maven-Central](https://img.shields.io/maven-central/v/org.apache.maven/apache-maven.svg)]
+
 ##Encryption/Decryption Library for Android
 
 
