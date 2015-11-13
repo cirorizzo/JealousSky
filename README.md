@@ -1,11 +1,11 @@
 # JealousSky
 
-![Platform](http://img.shields.io/badge/platform-android-blue.svg?style=flat)
-![MinSDK](http://img.shields.io/badge/minsdk-16-blue.svg?style=flat)
-![Language](http://img.shields.io/badge/language-java-brightgreen.svg?style=flat)
-![License](http://img.shields.io/badge/license-GPLv3.0-lightgrey.svg?style=flat)
-![Bintray](https://img.shields.io/bintray/v/asciidoctor/maven/asciidoctorj.svg)
-![Maven-Central](https://img.shields.io/maven-central/v/org.apache.maven/apache-maven.svg)
+[![Platform](http://img.shields.io/badge/platform-android-blue.svg?style=flat)](https://www.android.com/)
+[![MinSDK](http://img.shields.io/badge/minsdk-16-blue.svg?style=flat)](http://developer.android.com/about/versions/android-4.1.html)
+[![Language](http://img.shields.io/badge/language-java-brightgreen.svg?style=flat)](http://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html)
+[![License](http://img.shields.io/badge/license-GPLv3.0-lightgrey.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0-standalone.html)
+[![Bintray](https://img.shields.io/bintray/v/asciidoctor/maven/asciidoctorj.svg)](https://bintray.com/)
+[![Maven-Central](https://img.shields.io/maven-central/v/org.apache.maven/apache-maven.svg)](http://search.maven.org/)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-JealousSky-green.svg?style=true)](https://android-arsenal.com/details/1/2774)
 
 ##Encryption/Decryption Library for Android
