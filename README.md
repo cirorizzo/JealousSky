@@ -6,6 +6,7 @@
 ![License](http://img.shields.io/badge/license-GPLv3.0-lightgrey.svg?style=flat)
 ![Bintray](https://img.shields.io/bintray/v/asciidoctor/maven/asciidoctorj.svg)
 ![Maven-Central](https://img.shields.io/maven-central/v/org.apache.maven/apache-maven.svg)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-JealousSky-green.svg?style=true)](https://android-arsenal.com/details/1/2774)
 
 ##Encryption/Decryption Library for Android
 
