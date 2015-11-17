@@ -3,7 +3,6 @@ package com.github.cirorizzo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
-import android.util.Log;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
@@ -343,7 +342,6 @@ public class JealousSky {
         KeySpec spec = new PBEKeySpec(hashTheKey(key), salt, DEFAULT_ITERATIONS, DEFAULT_KEY_LENGTH);
         SecretKey tmp = factory.generateSecret(spec);
 
-        Log.d(TAG, String.format("hashTheKey(key) %s from (%s)", hashTheKey(key), key));
         return new SecretKeySpec(tmp.getEncoded(), "AES");
     }
 
@@ -463,13 +461,9 @@ public class JealousSky {
 
     private byte[] getEncryptInputStream(InputStream fis, Cipher cipher) throws IOException {
 
-        Log.d(TAG, "AES InputStream " + fis.available());
-
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
 
         CipherOutputStream cos = new CipherOutputStream(bos, cipher);
-
-        Log.d(TAG, String.format("AES Starting Reading InputStream available=> %d", (fis.available())));
 
         byte[] data = new byte[16];
         int read;
