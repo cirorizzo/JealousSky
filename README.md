@@ -36,7 +36,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.cirorizzo.jealoussky:0.2'
+    compile 'com.github.cirorizzo.jealoussky:0.3'
 }
 ```
 
@@ -46,7 +46,7 @@ Or Maven:
 <dependency>
     <groupId>com.github.cirorizzo</groupId>
     <artifactId>jealoussky</artifactId>
-    <version>0.2</version>
+    <version>0.3</version>
 </dependency>
 ```
 
