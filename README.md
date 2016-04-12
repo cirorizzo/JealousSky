@@ -36,7 +36,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.cirorizzo.jealoussky:0.3'
+    compile 'com.github.cirorizzo:jealoussky:0.3'
 }
 ```
 
