@@ -65,12 +65,12 @@ Simple use cases will look something like this:
                     "longestPasswordEverCreatedInAllTheUniverseOrMore",
                     "FFD7BADF2FBB1999");
                     
-    InputStream isEncrypted = new FileInputStream(new File(epic_fail_image.png.enc))
+    InputStream isEncrypted = new FileInputStream(new File(epic_fail_image.png.enc));
     
     ImageView imageViewDecrypted = (ImageView) findViewById(R.id.imageView);
     
     // Decrypting the InputStream
-    imageViewDecrypted.setImageBitmap(jealousSky.decryptToBitmap(isEncrypted)));
+    imageViewDecrypted.setImageBitmap(jealousSky.decryptToBitmap(isEncrypted));
     
     // Or Decrypting from the Assests
     imageViewDecrypted.setImageBitmap(jealousSky.decryptToBitmap(getAssets().open("spider-symbol.png.enc")));
